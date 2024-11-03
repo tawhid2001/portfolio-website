@@ -5,15 +5,14 @@ function toggleMenu(){
     icon.classList.toggle("open");
 }
 
-let currentIndex = 0;
-
-function moveCarousel(direction) {
-    const items = document.querySelectorAll(".carousel .details-container");
-    const itemsPerView = 3;
-    const totalItems = items.length;
-    const maxIndex = Math.ceil(totalItems / itemsPerView) - 1;
-
-    currentIndex = (currentIndex + direction + maxIndex + 1) % (maxIndex + 1);
-    
-    document.querySelector(".carousel").style.transform = `translateX(-${currentIndex * 100 / itemsPerView}%)`;
+function toggleExtracurriculars() {
+    const extracurriculars = document.getElementById('extracurriculars');
+    const btn = document.querySelector('.extra-btn');
+    if (extracurriculars.style.display === 'none') {
+        extracurriculars.style.display = 'block';
+        btn.innerText = 'Hide Extra-Curriculars';
+    } else {
+        extracurriculars.style.display = 'none';
+        btn.innerText = 'Show Extra-Curriculars';
+    }
 }
