@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script
+      src="https://kit.fontawesome.com/830943989e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Tawhid Talal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Tawhid Talal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-picture.jpg"
+          alt="Tawhid Talal Profile Picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Tawhid Talal</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contacts'">
+            Contacts
+          </button>
+        </div>
+        <div id="socials-containter">
+          <div>
+            <i
+              class="fa-brands fa-linkedin"
+              onclick="location.href='https://www.linkedin.com/in/tawhid-talal/'"
+            ></i>
+          </div>
+          <div>
+            <i
+              class="fa-brands fa-github"
+              onclick="location.href='https://github.com/tawhid2001'"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about_me.JPG"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <i class="fa-regular fa-address-card"></i>
+                <h3>Experience</h3>
+                <p>Software Developer<br />Full Stack with Django</p>
+              </div>
+              <div class="details-container">
+                <i class="fa-solid fa-school"></i>
+                <h3>Education</h3>
+                <p>B.Sc. in Computer Science<br/>UMGC</p>
+              </div>
+            </div>
+            <div class="text-container">
+                <p>
+                  I am Tawhid Talal, an ambitious and dedicated student with a wide
+                  range of interests and a strong focus on academics and
+                  professional growth. Originally from Bangladesh, I am now based in
+                  the USA, where I’m pursuing my studies and working toward my
+                  career goals. With a solid foundation in full-stack development
+                  and data structures and algorithms, I have experience in C, C++,
+                  JavaScript, Python, HTML, and CSS.
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <i
+        class="fa-solid fa-arrow-down-long arrow"
+        onclick="location.href='./#experience'"
+      ></i>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Work Experience</h1>
+        <div class="experience-details-container">
+    
+            <!-- Work Experience 3 -->
+            <div class="work-experience">
+                <h2 class="job-title">Peer Career Mentor (part-time)</h2>
+                <p class="company-name">UMGC</p>
+                <p class="job-duration">October 2024 - present</p>
+                <p class="job-description">Assisted juniors in navigating the UMGC website efficiently and provided guidance in programming languages.</p>
+            </div>
+            
+            <!-- Work Experience 2 -->
+            <div class="work-experience">
+                <h2 class="job-title">Cashier (part-time)</h2>
+                <p class="company-name">Safeway</p>
+                <p class="job-duration">October 2024 - present</p>
+                <p class="job-description">Provided customer service and handled transactions.</p>
+            </div>
+            
+            <!-- Work Experience 1 -->
+            <div class="work-experience">
+                <h2 class="job-title">Assembly Worker</h2>
+                <p class="company-name">Hughes Networks (Randstad)</p>
+                <p class="job-duration">October 2023 - September 2024</p>
+                <p class="job-description">Assembled and tested Wi-Fi units to ensure functionality and quality.</p>
+            </div>
+    
+            <!-- Add more work experiences as needed -->
+        </div>
+        <i class="fa-solid fa-arrow-down-long arrow" onclick="location.href='./#skills'"></i>
+    </section>
+    
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Technical skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>HTML</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>CSS</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>Python</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>Django</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>DRS</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>MySQL</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Soft skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>Leadership</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>Time Management</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>Communication</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>Team Work</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>Focused</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="./assets/checkmark.png" class="icon">
+                            </div>
+                            <div>
+                                <h3>Fast Learner</h3>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i
+        class="fa-solid fa-arrow-down-long arrow"
+        onclick="location.href='./#projects'"
+      ></i>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container project-container">
+                        <img src="./assets/project1.png" alt="Project image" class="project-img">
+                        <h2 class="experience-sub-title project-title">Project One</h2>
+                        <div class="project-btn-con">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/tawhid2001/enlighten_school'">Github Repository</button>
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://tawhid2001.github.io/enlighten_school/'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project1.png" alt="Project image" class="project-img">
+                        <h2 class="experience-sub-title project-title">Project One</h2>
+                        <div class="project-btn-con">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/tawhid2001/enlighten_school'">Github Repository</button>
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://tawhid2001.github.io/enlighten_school/'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project1.png" alt="Project image" class="project-img">
+                        <h2 class="experience-sub-title project-title">Project One</h2>
+                        <div class="project-btn-con">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/tawhid2001/enlighten_school'">Github Repository</button>
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://tawhid2001.github.io/enlighten_school/'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-arrow-down-long arrow" onclick="location.href='./#contacts'"></i>
+    </section>
+
+    <section id="contacts">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon">
+                <p><a href="mailto:tawhid.talal@gmail.com">tawhid.talal@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linked icon" class="icon">
+                <p><a href="https://www.linkedin.com/in/tawhid-talal/">LinkedIn</a></p> 
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                  </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Tawhid Talal. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
