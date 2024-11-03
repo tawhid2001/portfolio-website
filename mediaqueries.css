@@ -1,113 +1,103 @@
 @media screen and (max-width: 1400px) {
-    #profile{
-        height: 83vh;
-        margin-bottom: 6rem;
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
     }
-    .about-containers{
-        flex-wrap: wrap;
+    .about-containers {
+      flex-wrap: wrap;
     }
-}
-@media screen and (max-width: 1200px)  {
-    #desktop-nav{
-        display: none;
+    #contact,
+    #projects {
+      height: fit-content;
     }
-    #hamburger-nav{
-        display: flex;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
     }
-    #experience, .experience-details-container{
-        margin-top: 2rem;
+    #hamburger-nav {
+      display: flex;
     }
-    .arrow{
-        display: none;
+    #experience,
+    .experience-details-container {
+      margin-top: 2rem;
     }
-    section, .section-container{
-        height: fit-content;
+    #profile,
+    .section-container {
+      display: block;
     }
-
-    .section{
-        margin: 0 5%;
+    .arrow {
+      display: none;
     }
-
-    .section__pic-container{
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
+    section,
+    .section-container {
+      height: fit-content;
     }
-    .about-containers{
-        margin-top: 0;
+    section {
+      margin: 0 5%;
     }
-
-    #profile{
-        display: flex;
-        flex-direction: column;
+    .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
     }
-    .about-pic{
-        height: 50vh;
+    .about-containers {
+      margin-top: 0;
     }
-
-    .project-details-container{
-        display: flex;
-        flex-direction: column;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #contact,
+    footer {
+      height: 40vh;
     }
-
-    #projects{
-        display: flex;
-        flex-direction: column;
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
     }
-}
-
-@media screen and (max-width:600px){
-    #contact, footer{
-        height: 40vh;
+    article {
+      font-size: 1rem;
     }
-    #profile{
-        height: 83vh;
-        margin-bottom: 0;
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
     }
-    article{
-        font-size: 1rem;
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
     }
-    footer nav{
-        height: fit-content;
-        margin-bottom: 2rem;
+    .contact-info-container {
+      margin: 0;
     }
-    .about-containers,.contact-info-upper-container,.btn-container{
-        flex-wrap: wrap;
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
     }
-
-    .contact-info-container{
-        margin: 0;
+    .experience-sub-title {
+      font-size: 1.25rem;
     }
-    .contact-info-container p, .nav-links li a{
-        font-size: 1rem;
+    .logo {
+      font-size: 1.5rem;
     }
-    .experience-sub-title{
-        font-size: 1.25rem;
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
     }
-    .logo{
-        font-size: 1.5rem;
+    .section__pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
     }
-
-    .nav-links{
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
+    .section__text__p2 {
+      font-size: 1.25rem;
     }
-
-    .section__pic-container{
-        width: auto;
-        height: 46vw;
-        justify-content: center;
+    .title {
+      font-size: 2rem;
     }
-
-    .section__text__p2{
-        font-size: 1.25rem;
+    .text-container {
+      text-align: justify;
     }
-
-    .title{
-        font-size: 2rem;
-    }
-    .text-container{
-        text-align: justify;
-    }
-}
+  }
