@@ -224,7 +224,7 @@ i {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 8rem;
+  width: 12rem;
   border-radius: 2rem;
 }
 
@@ -502,4 +502,9 @@ footer p {
     height: auto;
     border-radius: 8px; /* Optional: Rounded corners */
     margin-bottom: 10px;
+}
+
+.text-container{
+  text-align: justify;
+  margin-bottom: 2rem;
 }
