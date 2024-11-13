@@ -30,6 +30,14 @@ a,
 
 /* Desktop Nav */
 
+header {
+  position: fixed;
+  width: 100%; /* Ensures the header spans the full width */
+  top: 0;
+  background-color: black; /* Set the background to black */
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
 nav,
 .nav-links {
   display: flex;
@@ -157,6 +165,7 @@ section {
 }
 
 #profile {
+  margin-top: 10rem;
   display: flex;
   justify-content: center;
   gap: 5rem;
