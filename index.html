@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mediaqueries.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/830943989e.js"
       crossorigin="anonymous"
@@ -14,14 +15,14 @@
   <body>
 <header>
     <nav id="desktop-nav">
-        <div class="logo">Tawhid Talal</div>
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">Tawhid Talal</div>
         <div>
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#about">About</a></li>
+            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#experience">Experience</a></li>
+            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></li>
+            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Projects</a></li>
+            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contacts">Contacts</a></li>
           </ul>
         </div>
       </nav>
@@ -45,7 +46,7 @@
 </header>
 
     <section id="profile">
-      <div class="section__pic-container">
+      <div class="section__pic-container" data-aos="zoom-in-right" data-aos-duration="3000">
         <img
           src="./assets/profile-picture.jpg"
           alt="Tawhid Talal Profile Picture"
@@ -53,30 +54,30 @@
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Tawhid Talal</h1>
-        <p class="section__text__p2">Software Developer</p>
+        <p class="section__text__p1" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">Hello, I'm</p>
+        <h1 class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">Tawhid Talal</h1>
+        <p class="section__text__p2" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="1100">Software Developer</p>
         <div class="btn-container">
           <button
-            class="btn btn-color-2"
+            class="btn btn-color-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100"
             onclick="window.open('./assets/Resume.pdf')"
           >
             Download Resume
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contacts'">
+          <button class="btn btn-color-1" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200" onclick="location.href='./#contacts'">
             Contacts
           </button>
         </div>
         <div id="socials-containter">
           <div>
             <i
-              class="fa-brands fa-linkedin"
+              class="fa-brands fa-linkedin" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1200"
               onclick="location.href='https://www.linkedin.com/in/tawhid-talal/'"
             ></i>
           </div>
           <div>
             <i
-              class="fa-brands fa-github"
+              class="fa-brands fa-github" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1300"
               onclick="location.href='https://github.com/tawhid2001'"
             ></i>
           </div>
@@ -424,5 +425,9 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
   </body>
 </html>
