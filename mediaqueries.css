@@ -45,6 +45,7 @@
   }
   .arrow {
     display: none;
+    visibility: hidden;
   }
 }
 
@@ -100,5 +101,9 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .arrow{
+    display: none;
+    visibility: hidden;
   }
 }
