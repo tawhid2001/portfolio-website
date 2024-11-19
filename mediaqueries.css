@@ -18,6 +18,7 @@
   }
   #hamburger-nav {
     display: flex;
+    align-items: center;
   }
   #experience,
   .experience-details-container {
@@ -44,7 +45,6 @@
   }
   .arrow {
     display: none;
-    visibility: hidden;
   }
 }
 

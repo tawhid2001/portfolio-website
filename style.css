@@ -32,7 +32,7 @@ a,
 
 header {
   position: fixed;
-  width: 100%; /* Ensures the header spans the full width */
+  width: 100%;
   top: 0;
   background-color: black; /* Set the background to black */
   z-index: 1000; /* Ensures it stays above other content */
