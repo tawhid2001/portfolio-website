@@ -477,9 +477,7 @@ article {
   gap: 1rem;
 }
 
-.project-container {
-  margin: 0.5rem;
-}
+
 
 /* Modal Styles */
 .modal {
@@ -518,7 +516,7 @@ article {
 
 /* Contact */
 
-#contact {
+#contacts {
   display: flex;
   justify-content: center;
   flex-direction: column;
