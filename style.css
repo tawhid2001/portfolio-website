@@ -547,6 +547,7 @@ article {
 footer {
   height: 26vh;
   margin: 0 1rem;
+  background-color: rgb(1, 0, 19);
 }
 
 footer p {
@@ -570,4 +571,16 @@ footer p {
 .text-container {
   text-align: justify;
   margin-bottom: 2rem;
+}
+
+
+.default_a {
+  color: white; /* Change to your preferred color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.default_a:hover {
+  color: #0056b3; /* Change to your preferred hover color */
+  text-decoration: none;
 }
